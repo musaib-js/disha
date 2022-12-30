@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block title %}Colleges Offered by Disha | Best Colleges in India and Abroad{% endblock %}
+{% load static %}
+{% block body %}
+<!--====== PRICING STYLE SIX START ======-->
+   <br> 
+<section id="pricing" class="pricing-area pricing-one pt-90 pb-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center pb-50">
+                    <h3 class="title">Colleges Offered By Disha</h3>
+                    <p class="text">So, let us show you the top colleges and universites where you can engineer your dream!</p>
+                </div> <!-- row -->
+            </div>
+        </div> <!-- row -->
+        <div class="row justify-content-center">
+            {% for x in colleges %}
+            <div class="col-lg-4 col-md-7 col-sm-9">
+                <div class="pricing enterprise mt-40">
+                    <div class="pricing-baloon-two">
+                        <img src="/static/assets/images/baloon-three.svg" alt="flower">
+                    </div>
+                    <div class="pricing-header text-right">
+                        <h5 class="sub-title">{{x.name}}</h5>
+                        <span class="price">$ 199</span>
+                        <p class="year">Starts From</p>
+                    </div>
+                    <div class="pricing-list">
+                        <ul>
+                            <li><i class="lni-check-mark-circle"></i> {{x.courses_offered}}</li>
+                            <li><i class="lni-check-mark-circle"></i>Bangladesh Medical College</li>
+                            <li><i class="lni-check-mark-circle"></i> Uttra Womens Medical College</li>
+                            <li><i class="lni-check-mark-circle"></i> Tahirul nisa Medical College</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-btn rounded-buttons text-center">
+                        <a class="main-btn rounded-one" href="#contact">Contact Us</a>
+                    </div>
+                    <div class="bottom-shape">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 112.353"><defs><linearGradient id="linear-gradient-1" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#495aff"/><stop offset="1" stop-color="#0acffe"/></linearGradient></defs><g data-name="Group 1182" transform="translate(-477 -594)"><g data-name="Group 747" transform="translate(-323 -53)"><path data-name="Path 294" d="M22631.131,167.036c120.006-55.735,214.322,2.57,267.041,0s82.135-16.81,82.135-16.81v74.953h-349.176Z" transform="translate(-21831.131 504.173)" opacity="0.1" fill="url(#linear-gradient-3)"/><path data-name="Path 297" d="M22980.3,167.036c-120.006-55.735-214.32,2.57-267.039,0s-82.137-16.81-82.137-16.81v74.953H22980.3Z" transform="translate(-21830.305 514.173)" opacity="0.2" fill="url(#linear-gradient-3)"/><path data-name="Path 296" d="M22631.131,167.036c120.006-55.735,214.322,2.57,267.041,0s82.135-16.81,82.135-16.81v74.953h-349.176Z" transform="translate(-21831.131 524.173)" opacity="0.4" fill="url(#linear-gradient-3)"/><path data-name="Path 295" d="M22980.3,167.036c-120.006-55.735-214.32,2.57-267.039,0s-82.137-16.81-82.137-16.81v74.953H22980.3Z" transform="translate(-21831.129 534.173)" opacity="0.6" fill="url(#linear-gradient-3)"/></g></g></svg>
+                    </div>
+                </div> <!-- single pricing -->
+            </div>
+            {% endfor %}
+            
+            <div class="col-lg-4 col-md-7 col-sm-9">
+                <div class="pricing enterprise mt-40">
+                    <div class="pricing-baloon-two">
+                        <img src="/static/assets/images/baloon-three.svg" alt="flower">
+                    </div>
+                    <div class="pricing-header text-right">
+                        <h5 class="sub-title">Top Engineering Universities</h5>
+                        <span class="price">$ 399</span>
+                        <p class="year">per year</p>
+                    </div>
+                    <div class="pricing-list">
+                        <ul>
+                            <li><i class="lni-check-mark-circle"></i> Chandigarh University</li>
+                            <li><i class="lni-check-mark-circle"></i> Sharda University</li>
+                            <li><i class="lni-check-mark-circle"></i>Amity University</li>
+                            <li><i class="lni-check-mark-circle"></i> Chitkara University</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-btn rounded-buttons text-center">
+                        <a class="main-btn rounded-one" href="#contact">Contact Us</a>
+                    </div>
+                    <div class="bottom-shape">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 112.353"><defs><linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#495aff"/><stop offset="1" stop-color="#0acffe"/></linearGradient></defs><g data-name="Group 1182" transform="translate(-477 -594)"><g data-name="Group 747" transform="translate(-323 -53)"><path data-name="Path 294" d="M22631.131,167.036c120.006-55.735,214.322,2.57,267.041,0s82.135-16.81,82.135-16.81v74.953h-349.176Z" transform="translate(-21831.131 504.173)" opacity="0.1" fill="url(#linear-gradient-3)"/><path data-name="Path 297" d="M22980.3,167.036c-120.006-55.735-214.32,2.57-267.039,0s-82.137-16.81-82.137-16.81v74.953H22980.3Z" transform="translate(-21830.305 514.173)" opacity="0.2" fill="url(#linear-gradient-3)"/><path data-name="Path 296" d="M22631.131,167.036c120.006-55.735,214.322,2.57,267.041,0s82.135-16.81,82.135-16.81v74.953h-349.176Z" transform="translate(-21831.131 524.173)" opacity="0.4" fill="url(#linear-gradient-3)"/><path data-name="Path 295" d="M22980.3,167.036c-120.006-55.735-214.32,2.57-267.039,0s-82.137-16.81-82.137-16.81v74.953H22980.3Z" transform="translate(-21831.129 534.173)" opacity="0.6" fill="url(#linear-gradient-3)"/></g></g></svg>
+                    </div>
+                </div> <!-- single pricing -->
+            </div>
+            
+            <div class="col-lg-4 col-md-7 col-sm-9">
+                <div class="pricing enterprise mt-40">
+                    <div class="pricing-baloon-two">
+                        <img src="/static/assets/images/baloon-three.svg" alt="flower">
+                    </div>
+                    <div class="pricing-header text-right">
+                        <h5 class="sub-title">Top Paramedical Universities</h5>
+                        <span class="price">$ 699</span>
+                        <p class="year">per year</p>
+                    </div>
+                    <div class="pricing-list">
+                        <ul>
+                            <li><i class="lni-check-mark-circle"></i>Oxford University Banglore</li>
+                            <li><i class="lni-check-mark-circle"></i> Adesh Medical University Punjab</li>
+                            <li><i class="lni-check-mark-circle"></i>Sarwaswati College Chandigarh</li>
+                            <li><i class="lni-check-mark-circle"></i>New Shri Shantni College</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-btn rounded-buttons text-center">
+                        <a class="main-btn rounded-one" href="#contact">Contact Us</a>
+                    </div>
+                    <div class="bottom-shape">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 112.353"><defs><linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#495aff"/><stop offset="1" stop-color="#0acffe"/></linearGradient></defs><g data-name="Group 1182" transform="translate(-477 -594)"><g data-name="Group 747" transform="translate(-323 -53)"><path data-name="Path 294" d="M22631.131,167.036c120.006-55.735,214.322,2.57,267.041,0s82.135-16.81,82.135-16.81v74.953h-349.176Z" transform="translate(-21831.131 504.173)" opacity="0.1" fill="url(#linear-gradient-3)"/><path data-name="Path 297" d="M22980.3,167.036c-120.006-55.735-214.32,2.57-267.039,0s-82.137-16.81-82.137-16.81v74.953H22980.3Z" transform="translate(-21830.305 514.173)" opacity="0.2" fill="url(#linear-gradient-3)"/><path data-name="Path 296" d="M22631.131,167.036c120.006-55.735,214.322,2.57,267.041,0s82.135-16.81,82.135-16.81v74.953h-349.176Z" transform="translate(-21831.131 524.173)" opacity="0.4" fill="url(#linear-gradient-3)"/><path data-name="Path 295" d="M22980.3,167.036c-120.006-55.735-214.32,2.57-267.039,0s-82.137-16.81-82.137-16.81v74.953H22980.3Z" transform="translate(-21831.129 534.173)" opacity="0.6" fill="url(#linear-gradient-3)"/></g></g></svg>
+                    </div>
+                </div> <!-- single pricing -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</section>
+
+<!--====== PRICING STYLE SIX ENDS ======-->
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Videos | Motivational Videos by Experts, Which Would Help You in Choosing the Right Path
+{% endblock title %}
+
+{% block body %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+
+<!-- Video Part -->
+	<div class="row gap-y">
+	{% for x in videos  %}
+		<div class="col-md-6 col-lg-4">
+			<div class="card">
+				<img class="img-card-top" src="/media/{{x.thumnbail}}" width="auto" height="250">
+				<div class="card-body">
+					<a href="/videopage/{{x.slug}}/">
+					<h5 class="card-title text-dark">{{x.subject}}</h5>
+					<span class="card-text text-muted">
+					Posted on {{x.timeStamp}} by {{x.speaker}} </span>
+					</a>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+    <!-- End Video Part -->
+	<br>
+
+</div>
+</section>
+{% endblock %}

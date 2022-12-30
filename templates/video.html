@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% comment %} {% load humanize %} {% endcomment %}
+{% block title %}
+{{video.subject}}
+{% endblock title %}
+
+{% block body %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class = "container">
+ <h3 class="text-muted my-4">{{video.subject}} by <span class="text-dark">{{video.speaker}}</span></h3>
+<hr = "featurette-divider">
+<video class = "embed-responsive embed-resposive-16by9" controls = "controls">
+      <source src = "/media/{{video.video}}" type = "video/mp4">
+</video> 
+<br>
+	  <h3 class="text-muted my-4">{{video.subject}} by <span class="text-dark">{{video.speaker}}</span></h3>
+	  <p >{{video.desc}}</p>
+	<br>
+</div>
+
+{% endblock %}

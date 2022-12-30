@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>
+ 
+    {% block title %}{% endblock %}
+    </title>
+  <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="/static/assets/images/favicon.ico" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+
+    <!--====== Aos css ======-->
+    <link rel="stylesheet" href="/static/assets/css/aos.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="/static/assets/css/LineIcons.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="/static/assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+
+    {% block extracss %}{% endblock %}
+</head>
+
+<body>
+{% load static %}
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+    
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="navbar-area navbar-transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="/">
+                                <img src="/static/assets/images/disha.png" alt="Disha" style = "border-radius: 23px"> 
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFive" aria-controls="navbarFive" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarFive">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="/">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="/">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="/videopage/videopage">Videos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="/">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="/">Colleges</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="/">contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            {% comment %} <div class="navbar-btn rounded-buttons d-none d-sm-inline-block">
+                                <a class="main-btn rounded-one" href="#">DOWNLOAD NOW</a>
+                            </div> {% endcomment %}
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div>
+
+{% block body %}
+{% comment %} The Body Content Goes Here {% endcomment %}
+{% endblock %}
+
+ <!--====== FOOTER FIVE PART START ======-->
+
+    <footer id="footer" class="footer-area footer-bark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="footer-logo text-center">
+                        <a class="mt-30 bg-dark" href="https://instagaram.com/mu.saibaltaf6"><img class = "img-rounded" src="/static/assets/images/1.svg" alt="Logo"></a>
+                    </div> <!-- footer logo -->
+                    <ul class="social text-center mt-60">
+                        <li><a href="https://www.facebook.com/musaibaltafurahman/"><i class="lni-facebook-filled"></i></a></li>
+                        <li><a href="https://twitter.com/Musaibaltaf6"><i class="lni-twitter-original"></i></a></li>
+                        <li><a href="https://instagram.com/mu.saibaltaf6"><i class="lni-instagram-original"></i></a></li>
+                    </ul> <!-- social -->
+                    <div class="footer-support text-center">
+                        <span class="number">+91-9541483162</span>
+                        <span class="mail">help@nectarinfotech.in</span>
+                    </div>
+                    <div class="footer-app-store text-center">
+                        
+                    </div>
+                    <div class="copyright text-center mt-35">
+                        <p class="text"> Developed by <a rel="nofollow" target = "_blank" href="https://instagram.com/mu.saibaltaf6">Nectar InfoTech</a>
+                    </div> <!--  copyright -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </footer>
+
+    <!--====== FOOTER FIVE PART ENDS ======-->
+
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->   
+
+
+
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="/static/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="/static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="/static/assets/js/bootstrap.min.js"></script>
+    <script src="/static/assets/js/popper.min.js"></script>
+
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="/static/assets/js/jquery.easing.min.js"></script>
+    <script src="/static/assets/js/scrolling-nav.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+</html>
